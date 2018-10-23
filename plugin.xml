@@ -7,6 +7,9 @@
         <param name="ios-package" value="AppleSFSpeechRecognizerRequestAuthorization" />
       </feature>
     </config-file>
+    <config-file target="*-Info.plist" parent="NSSpeechRecognitionUsageDescription">
+      <string>$SPEECH_RECOGNITION_USAGE_DESCRIPTION</string>
+    </config-file>
     <framework src="Speech.framework" weak="true" />
     <source-file src="src/swift/AppleSFSpeechRecognizerRequestAuthorization.swift" />
   </platform>
